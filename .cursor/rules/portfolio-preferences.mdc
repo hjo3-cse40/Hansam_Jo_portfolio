@@ -1,0 +1,40 @@
+---
+description: Hansam Jo portfolio site preferences and locked decisions
+alwaysApply: true
+---
+
+# Portfolio (Hansam_Jo_portfolio)
+
+- **Path:** `/Users/samjo/code/portfolio website`
+- **Live:** https://hjo3-cse40.github.io/Hansam_Jo_portfolio/
+- **Stack:** static `index.html`, `styles.css`, `script.js` (no build step)
+
+## Design direction (locked)
+
+- Single-page **vertical** layout (not sidebar-first horizontal).
+- Dark charcoal + warm brass/teal accents. **Avoid** dominant purple/white “AI template” look.
+- Inspiration: polish of paritosh.dev and Asfakur Nariz style, but own voice.
+- Section subtitles under About / Experience / Projects: **small, italic, muted** (not big hero headlines).
+- Header brand dot is decorative only, not “online” status.
+
+## Content / UI (current)
+
+- **No** footer, contact card, hero email button, or public Resume button (resume shared personally when asked).
+- **No** email in social row: LinkedIn (light/white on blue) + GitHub only.
+- FST project: small GitHub icon link, not “GitHub” text.
+- SemiAI experience: say **internal operations platform**, not CRM (NDA-safe).
+- Hero metric: “Bilingual communication” (not “stakeholder”).
+- Nav: About, Experience, Projects only.
+
+## Hidden for now (suggest occasionally)
+
+- Line removed from hero card: **“Open to new grad SWE roles”**. User may want it back on the public site sometimes; ask before re-adding.
+
+## Git / GitHub
+
+- **No** `Co-authored-by: Cursor` on commits. Repo uses `.githooks/commit-msg` and `core.hooksPath .githooks`.
+- Do not use `--no-verify` on commits unless user explicitly asks and hook failure is unrelated.
+
+## Deploy / cache
+
+- GitHub Pages from `main` / root. If user sees broken styling, try hard refresh or private window (browser cache).
