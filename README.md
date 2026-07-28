@@ -23,6 +23,20 @@ python3 -m http.server 5173
 3. GitHub → **Settings** → **Pages** → Source: Deploy from branch `main` / root.
 4. Site will be live at `https://<user>.github.io/<repo>/` (or the user site URL if using `username.github.io`).
 
+## Git hooks (no Cursor co-author on commits)
+
+Cursor sometimes adds `Co-authored-by: Cursor <cursoragent@cursor.com>` to commit messages. This repo includes a hook that removes that line before the commit is finalized.
+
+One-time setup on your machine:
+
+```bash
+cd "/Users/samjo/code/portfolio website"
+chmod +x .githooks/commit-msg
+git config core.hooksPath .githooks
+```
+
+After that, commits made in this repo (including from Cursor) should show only you on GitHub, as long as hooks are not skipped with `--no-verify`.
+
 ## Contents
 
 - `index.html` — page structure

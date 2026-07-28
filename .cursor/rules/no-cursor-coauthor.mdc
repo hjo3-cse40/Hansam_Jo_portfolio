@@ -1,0 +1,14 @@
+---
+description: Git commits in this repo must not include Cursor co-author trailers
+alwaysApply: true
+---
+
+# Git commits (portfolio repo)
+
+When creating commits in this repository:
+
+- Do **not** add `Co-authored-by: Cursor` or any Cursor agent co-author trailer.
+- Commit messages should list only the human author on GitHub.
+- After drafting a message, confirm the body has no `Co-authored-by:` line before push.
+- Prefer `git commit -F <file>` with a message file that contains only the subject and body you intend, if that avoids auto-added trailers.
+- This repo uses `.githooks/commit-msg` to remove Cursor co-author lines when hooks run. Do not use `--no-verify` unless a hook failure is unrelated and the user explicitly asks.
