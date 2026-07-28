@@ -21,7 +21,7 @@
       }
     },
     {
-      rootMargin: "-20% 0px -55% 0px",
+      rootMargin: "-18% 0px -60% 0px",
       threshold: [0.15, 0.35, 0.6],
     }
   );

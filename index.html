@@ -17,193 +17,269 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="glow" aria-hidden="true"></div>
+    <div class="glow glow-left" aria-hidden="true"></div>
+    <div class="glow glow-right" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
 
-    <div class="layout">
-      <header class="sidebar">
-        <div class="identity">
-          <img
-            class="avatar"
-            src="assets/avatar.png"
-            alt="Portrait of Hansam Jo"
-            width="88"
-            height="88"
-          />
-          <div>
-            <h1>Hansam (Sam) Jo</h1>
-            <p class="name-ko" lang="ko">조한샘</p>
-            <p class="role">Software Engineer · New Grad (Dec 2026)</p>
-            <p class="tagline">
-              I build full-stack products and AI systems people actually use.
-            </p>
-          </div>
-        </div>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>Hansam Jo</span>
+        </a>
 
         <nav class="nav" aria-label="On this page">
           <a href="#about" data-section="about" class="active">About</a>
           <a href="#experience" data-section="experience">Experience</a>
           <a href="#projects" data-section="projects">Projects</a>
         </nav>
+      </div>
+    </header>
 
-        <div class="sidebar-links">
-          <a class="resume-btn" href="assets/Hansam_Jo_Resume.pdf" target="_blank" rel="noopener">
-            Resume
-            <span aria-hidden="true">↗</span>
-          </a>
-          <ul class="social" aria-label="Social links">
+    <main id="top">
+      <section class="hero shell">
+        <div class="hero-copy">
+          <p class="eyebrow">Software engineer · New grad December 2026</p>
+          <h1>Full stack products, sharp execution, calm design.</h1>
+          <p class="hero-text">
+            I build software that feels practical and polished: internal tools,
+            AI workflows, data-heavy systems, and product surfaces people
+            actually rely on.
+          </p>
+
+          <div class="hero-actions">
+            <a class="primary-btn" href="#projects">View selected work</a>
+          </div>
+
+          <ul class="hero-metrics" aria-label="Highlights">
             <li>
-              <a href="mailto:hansamjo72@gmail.com" aria-label="Email" title="Email">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v11a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 17.5v-11Zm2.2-.5 5.8 4.35L17.8 6H6.2Zm11.3 1.84-5.55 4.17a1.25 1.25 0 0 1-1.5 0L5.5 7.34V17.5c0 .55.45 1 1 1h11c.55 0 1-.45 1-1V7.34Z"/>
-                </svg>
-              </a>
+              <strong>3</strong>
+              <span>Shipped products featured here</span>
             </li>
             <li>
-              <a
-                href="https://www.linkedin.com/in/sam-jo-36ba80166/"
-                target="_blank"
-                rel="noopener"
-                aria-label="LinkedIn"
-                title="LinkedIn"
-              >
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M6.94 8.5H4.1V20h2.84V8.5ZM5.52 4a1.84 1.84 0 1 0 0 3.68 1.84 1.84 0 0 0 0-3.68ZM20 20h-2.84v-5.98c0-1.43-.03-3.26-1.99-3.26-1.99 0-2.3 1.55-2.3 3.16V20H10V8.5h2.72v1.57h.04c.38-.72 1.3-1.48 2.68-1.48 2.87 0 3.4 1.89 3.4 4.34V20Z"/>
-                </svg>
-              </a>
+              <strong>50+</strong>
+              <span>Real users across side projects</span>
             </li>
             <li>
-              <a
-                href="https://github.com/hjo3-cse40"
-                target="_blank"
-                rel="noopener"
-                aria-label="GitHub"
-                title="GitHub"
-              >
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85 0 1.7.11 2.5.34 1.9-1.29 2.74-1.02 2.74-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.86v2.76c0 .26.18.58.69.48A10 10 0 0 0 12 2Z"/>
-                </svg>
-              </a>
+              <strong>EN / KR</strong>
+              <span>Bilingual communication</span>
             </li>
           </ul>
         </div>
-      </header>
 
-      <main class="content">
-        <section id="about" class="section">
-          <h2 class="section-label">About</h2>
+        <aside class="hero-panel">
+          <div class="identity-card">
+            <div class="identity-top">
+              <img
+                class="avatar"
+                src="assets/avatar.png"
+                alt="Portrait of Hansam Jo"
+                width="96"
+                height="96"
+              />
+              <div>
+                <p class="identity-label">Hansam (Sam) Jo</p>
+                <p class="name-ko" lang="ko">조한샘</p>
+              </div>
+            </div>
+
+            <div class="identity-details">
+              <p>UC Santa Cruz Computer Science</p>
+              <p>Bay Area AI startup intern</p>
+            </div>
+
+            <div class="identity-note">
+              <p class="identity-note-label">Best fit</p>
+              <p>
+                Product engineering roles where strong backend thinking and
+                clean frontend execution both matter.
+              </p>
+            </div>
+
+            <ul class="mini-chips" aria-label="Core strengths">
+              <li>Full stack</li>
+              <li>AI systems</li>
+              <li>Internal tools</li>
+            </ul>
+
+            <ul class="social" aria-label="Social links">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/sam-jo-36ba80166/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="LinkedIn"
+                  title="LinkedIn"
+                  class="social-linkedin"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6.94 8.5H4.1V20h2.84V8.5ZM5.52 4a1.84 1.84 0 1 0 0 3.68 1.84 1.84 0 0 0 0-3.68ZM20 20h-2.84v-5.98c0-1.43-.03-3.26-1.99-3.26-1.99 0-2.3 1.55-2.3 3.16V20H10V8.5h2.72v1.57h.04c.38-.72 1.3-1.48 2.68-1.48 2.87 0 3.4 1.89 3.4 4.34V20Z"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/hjo3-cse40"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="GitHub"
+                  title="GitHub"
+                  class="social-github"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85 0 1.7.11 2.5.34 1.9-1.29 2.74-1.02 2.74-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.86v2.76c0 .26.18.58.69.48A10 10 0 0 0 12 2Z"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+
+      <section id="about" class="section shell">
+        <div class="section-heading">
+          <p class="section-label">About</p>
+          <h2>Grounded engineering, not fluff.</h2>
+        </div>
+
+        <div class="about-grid">
           <div class="prose">
             <p>
-              I’m a Computer Science student at
-              <strong>UC Santa Cruz</strong> (graduating Dec 2026), currently an
-              intern at a Bay Area AI startup. I like shipping end-to-end:
-              data models, APIs, UIs, and the messy edge cases in between.
+              I’m a Computer Science student at <strong>UC Santa Cruz</strong>,
+              graduating in Dec 2026, and currently interning at a Bay Area AI
+              startup. I like owning real systems end to end: data models,
+              backend workflows, frontends, and the awkward operational details
+              in between.
             </p>
             <p>
-              Outside of work I’ve built products with real users: a frisbee
-              stats tracker for local teams, a multi-source notification
-              pipeline, and a phone-based AI flight booking agent. I’m bilingual
-              in English and Korean, and I love when something I built is
-              actually getting used.
+              Outside of internship work, I build products with actual users:
+              a frisbee stats tracker for live games, a multi-source monitoring
+              pipeline, and a phone-based AI flight agent. I care about useful
+              software, not just demos.
             </p>
           </div>
-        </section>
 
-        <section id="experience" class="section">
-          <h2 class="section-label">Experience</h2>
-          <ol class="timeline">
-            <li class="card card-experience">
-              <div class="card-meta">
+          <div class="fact-stack">
+            <article class="fact-card">
+              <span class="fact-kicker">Focus</span>
+              <h3>Product-minded full stack engineering</h3>
+              <p>Strongest when a project needs both technical depth and clear user-facing execution.</p>
+            </article>
+            <article class="fact-card">
+              <span class="fact-kicker">Strength</span>
+              <h3>Systems that get used</h3>
+              <p>I naturally gravitate toward workflows, reliability, edge cases, and software people come back to.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section shell">
+        <div class="section-heading">
+          <p class="section-label">Experience</p>
+          <h2>Recent work with ownership and range.</h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline-item card card-experience">
+            <div class="timeline-rail" aria-hidden="true"></div>
+            <div class="card-meta">
+              <img
+                class="org-logo"
+                src="assets/logos/semiai.png"
+                alt="SemiAI"
+                width="120"
+                height="28"
+              />
+              <p class="card-dates">Jul 2026 to Sep 2026</p>
+            </div>
+            <div class="card-body">
+              <h3>Software Engineer / AI Solutions Intern</h3>
+              <p>
+                Owned an internal operations platform from data model through core workflows,
+                shipped ahead of schedule, and built backend pipelines that
+                automated recurring reporting work. Worked directly with
+                English- and Korean-speaking stakeholders in a startup setting.
+              </p>
+              <ul class="chips" aria-label="Focus areas">
+                <li>Full stack</li>
+                <li>Data pipelines</li>
+                <li>Product ownership</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section id="projects" class="section shell">
+        <div class="section-heading">
+          <p class="section-label">Projects</p>
+          <h2>Selected work with real constraints and real users.</h2>
+        </div>
+
+        <ul class="projects">
+          <li class="card project project-featured">
+            <div class="project-logo-wrap">
+              <a href="https://argus.masondrake.dev" target="_blank" rel="noopener">
                 <img
-                  class="org-logo"
-                  src="assets/logos/semiai.png"
-                  alt="SemiAI"
-                  width="120"
-                  height="28"
+                  class="project-logo project-logo-argus"
+                  src="assets/logos/argus.png"
+                  alt="Argus"
+                  width="64"
+                  height="64"
                 />
-              </div>
-              <div class="card-body">
-                <p class="card-dates">Jul 2026 — Sep 2026</p>
-                <h3>
-                  Software Engineer / AI Solutions Intern
-                  <span class="sep">·</span>
-                  SemiAI
-                </h3>
-                <p>
-                  Owned an internal CRM end-to-end (data model, APIs, core
-                  workflows), shipped ahead of schedule, and built backend
-                  pipelines that automated recurring reporting workflows.
-                  Worked directly with English- and Korean-speaking
-                  stakeholders in a fast-moving startup.
-                </p>
-                <ul class="chips" aria-label="Focus areas">
-                  <li>Full-stack</li>
-                  <li>Data pipelines</li>
-                  <li>Product ownership</li>
-                </ul>
-              </div>
-            </li>
-          </ol>
-        </section>
-
-        <section id="projects" class="section">
-          <h2 class="section-label">Projects</h2>
-          <ul class="projects">
-            <li class="card project">
-              <div class="project-logo-wrap">
-                <a href="https://argus.masondrake.dev" target="_blank" rel="noopener">
-                  <img
-                    class="project-logo project-logo-argus"
-                    src="assets/logos/argus.png"
-                    alt="Argus"
-                    width="64"
-                    height="64"
-                  />
-                </a>
-              </div>
-              <div class="card-body">
-                <div class="project-top">
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="project-top">
+                <div>
+                  <p class="project-index">01</p>
                   <h3>
                     <a href="https://argus.masondrake.dev" target="_blank" rel="noopener">
                       Argus
                       <span aria-hidden="true">↗</span>
                     </a>
                   </h3>
-                  <p class="stat">30+ active users</p>
                 </div>
-                <p>
-                  Containerized data pipeline that pulls YouTube, Reddit, and
-                  RSS sources, filters by keyword, and delivers focused
-                  notifications to Discord and dashboards.
-                </p>
-                <ul class="chips">
-                  <li>Next.js</li>
-                  <li>Go</li>
-                  <li>PostgreSQL</li>
-                  <li>RabbitMQ</li>
-                  <li>Docker</li>
-                  <li>Kubernetes</li>
-                </ul>
+                <p class="stat">30+ active users</p>
               </div>
-            </li>
+              <p>
+                Containerized monitoring pipeline pulling YouTube, Reddit, and
+                RSS sources, filtering by keyword, and delivering focused
+                notifications to Discord and dashboards. Designed for noisy,
+                constantly changing inputs.
+              </p>
+              <ul class="chips">
+                <li>Next.js</li>
+                <li>Go</li>
+                <li>PostgreSQL</li>
+                <li>RabbitMQ</li>
+                <li>Docker</li>
+                <li>Kubernetes</li>
+              </ul>
+            </div>
+          </li>
 
-            <li class="card project">
-              <div class="project-logo-wrap">
-                <a
-                  href="https://fst-frisbee-statistics-tracker.vercel.app"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <img
-                    class="project-logo project-logo-fst"
-                    src="assets/logos/fst-mark.png"
-                    alt="FST"
-                    width="107"
-                    height="94"
-                  />
-                </a>
-              </div>
-              <div class="card-body">
-                <div class="project-top">
+          <li class="card project">
+            <div class="project-logo-wrap">
+              <a
+                href="https://fst-frisbee-statistics-tracker.vercel.app"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  class="project-logo project-logo-fst"
+                  src="assets/logos/fst-mark.png"
+                  alt="FST"
+                  width="107"
+                  height="94"
+                />
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="project-top">
+                <div>
+                  <p class="project-index">02</p>
                   <h3>
                     <a
                       href="https://fst-frisbee-statistics-tracker.vercel.app"
@@ -214,75 +290,75 @@
                       <span aria-hidden="true">↗</span>
                     </a>
                   </h3>
-                  <p class="stat">50+ users</p>
                 </div>
-                <p>
-                  Cross-platform stats tracker for ultimate frisbee teams:
-                  auth, event logging, and analytics views used in real games
-                  by school and club teams.
-                </p>
-                <div class="project-actions">
-                  <a
-                    class="text-link"
-                    href="https://github.com/hjo3-cse40/FST_Frisbee-Statistics-Tracker"
-                    target="_blank"
-                    rel="noopener"
-                    >GitHub</a
-                  >
-                </div>
-                <ul class="chips">
-                  <li>React</li>
-                  <li>TypeScript</li>
-                  <li>Supabase</li>
-                </ul>
+                <p class="stat">50+ users</p>
               </div>
-            </li>
+              <p>
+                Cross-platform stats tracker for ultimate frisbee teams with
+                auth, event logging, and analytics views used in real games by
+                school and club teams.
+              </p>
+              <div class="project-actions">
+                <a
+                    class="project-icon-link"
+                  href="https://github.com/hjo3-cse40/FST_Frisbee-Statistics-Tracker"
+                  target="_blank"
+                  rel="noopener"
+                >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85 0 1.7.11 2.5.34 1.9-1.29 2.74-1.02 2.74-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.86v2.76c0 .26.18.58.69.48A10 10 0 0 0 12 2Z"/>
+                    </svg>
+                    <span class="sr-only">FST GitHub repository</span>
+                  </a>
+              </div>
+              <ul class="chips">
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>Supabase</li>
+              </ul>
+            </div>
+          </li>
 
-            <li class="card project">
-              <div class="project-logo-wrap">
-                <img
-                  class="project-logo project-logo-phonely"
-                  src="assets/logos/phonely.svg"
-                  alt="Phonely logo"
-                  width="140"
-                  height="32"
-                />
-              </div>
-              <div class="card-body">
-                <div class="project-top">
+          <li class="card project">
+            <div class="project-logo-wrap">
+              <img
+                class="project-logo project-logo-phonely"
+                src="assets/logos/phonely.svg"
+                alt="Phonely logo"
+                width="140"
+                height="32"
+              />
+            </div>
+            <div class="card-body">
+              <div class="project-top">
+                <div>
+                  <p class="project-index">03</p>
                   <h3>
                     <a href="https://phonely.ai/?ref=sam" target="_blank" rel="noopener">
                       SkyLink · AI Flight Agent
                       <span aria-hidden="true">↗</span>
                     </a>
                   </h3>
-                  <p class="stat">Voice AI</p>
                 </div>
-                <p>
-                  Phone-based voice agent on Phonely for end-to-end flight
-                  search and booking: live AWS APIs, multi-step call flow,
-                  edge-case handling, human handoff, and RAG for airline policy
-                  Q&amp;A mid-call.
-                </p>
-                <ul class="chips">
-                  <li>Voice agents</li>
-                  <li>AWS APIs</li>
-                  <li>RAG</li>
-                  <li>Call flows</li>
-                </ul>
+                <p class="stat">Voice AI</p>
               </div>
-            </li>
-          </ul>
-        </section>
+              <p>
+                Phone-based voice agent for end-to-end flight search and
+                booking with live AWS APIs, multi-step call flows, edge-case
+                handling, human handoff, and policy Q&amp;A during the call.
+              </p>
+              <ul class="chips">
+                <li>Voice agents</li>
+                <li>AWS APIs</li>
+                <li>RAG</li>
+                <li>Call flows</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
 
-        <footer class="footer">
-          <p>
-            Built for clarity, not decoration.
-            <a href="mailto:hansamjo72@gmail.com">Say hello</a>.
-          </p>
-        </footer>
-      </main>
-    </div>
+    </main>
 
     <script src="script.js"></script>
   </body>
