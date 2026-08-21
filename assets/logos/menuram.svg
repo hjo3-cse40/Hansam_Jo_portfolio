@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188 40" fill="none">
+  <circle cx="10" cy="20" r="8" fill="#7fc9c3"/>
+  <text x="26" y="28" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="22" font-weight="700" letter-spacing="-0.4" fill="#edf1f4">Menu</text>
+  <text x="94" y="28" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="22" font-weight="700" letter-spacing="-0.4" fill="#c7a46a">RAM</text>
+</svg>

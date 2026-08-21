@@ -48,7 +48,7 @@ After that, commits made in this repo (including from Cursor) should show only y
 
 ## Future ideas (do not build until asked)
 
-- **Blog / posts:** Hansam wants a writing section later (personal posts and blogs), not an auto LinkedIn feed. Keep v1 project-focused; add a clean Posts/Writing section when ready (hand-authored, not scraped).
+- **Blog / posts:** Hansam wants a writing section later (personal posts and blogs), not an auto LinkedIn feed. Keep v1 project-focused; add a clean Posts/Writing section when ready (hand-authored, not scraped). MenuRAM deep-dive notes are captured in `.cursor/rules/menuram-writing-notes.mdc`. Do not build the blog until asked.
 - Skip GitHub contribution graph unless the graph looks strong and he asks for it.
 
 ## Note

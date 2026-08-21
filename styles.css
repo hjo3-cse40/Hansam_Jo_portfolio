@@ -596,6 +596,11 @@ h1 {
   max-width: 150px;
 }
 
+.project-logo-menuram {
+  height: 32px;
+  max-width: 168px;
+}
+
 .card-body h3 {
   margin-top: 0.45rem;
   font-size: 1.45rem;

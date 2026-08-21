@@ -1,0 +1,40 @@
+---
+description: MenuRAM and local-LLM writing dump for a later portfolio blog. Do not publish until asked.
+alwaysApply: true
+---
+
+# MenuRAM writing notes (hold)
+
+Do **not** add a blog page, LinkedIn ingest, or extra public copy until Hansam asks. Portfolio card is project 04 only. These notes are the idea dump for later posts.
+
+## Split later (likely 2+ posts)
+
+1. **Why MenuRAM exists** (product story)
+2. **Local models on an 18GB Mac** (Ollama → LM Studio, model comparison). Do not mix employer / SemiAI work into a public post.
+
+## Why MenuRAM
+
+- Running local models on an **18GB** Apple Silicon Mac.
+- Thought loading the model meant enough RAM. **KV cache** used the rest.
+- First tool: **Ollama**. Outputs kept getting truncated. Raised context window. Did not notice the real issue at first.
+- Mac got very slow. Activity Monitor: memory basically full, **heavy swap**.
+- Checking RAM meant opening Activity Monitor, clicking the Memory tab, waiting a few seconds for totals. Bad glance UX.
+- Built a **menu bar extra**: used / total always visible; click for available, pressure, swap, top apps.
+- Status: still in development, running from **Xcode**, used daily, genuinely helpful. No App Store / notarized build yet. No public users yet, so no user-count on the card.
+- Repo: https://github.com/hjo3-cse40/MenuRAM
+- LinkedIn launch: https://www.linkedin.com/feed/update/urn:li:activity:7496666525068636160/
+- Honest claim: MenuRAM shows load (pressure/swap) before the next run. It does **not** fix truncation. Truncation was small default context windows. Raising context grew KV cache and then swap.
+
+## Local model notes (separate post)
+
+- Started with **Gemma 4 12B** via Ollama. That is when truncation / RAM pain showed up.
+- Ollama app UI was too simple: hard to set thinking on/off or effort levels, and to control context window.
+- Switched to **LM Studio**. More control. Using it now.
+- Models under test (said “Kuen”; treat as **Qwen** unless he confirms the exact card): **Qwen 2.7 8B Instruct** and **Llama 3.1 8B Instruct**.
+- Gave them tougher edge-case eval questions (full prompt set later).
+- Early take: Qwen is more methodical, follows instructions better, more calculated. Llama 3.1 8B strengths still unclear. Keep experimenting.
+- Do not invent scores. Wait for his test set before writing this up.
+
+## Voice
+
+Simple, direct. No em dashes in public copy. Do not claim App Store, user counts, or that swap truncates generations.

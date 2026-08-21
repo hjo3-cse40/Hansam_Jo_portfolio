@@ -25,6 +25,7 @@ alwaysApply: true
 - SemiAI experience: say **internal operations platform**, not CRM (NDA-safe).
 - Hero metric: “Bilingual communication” (not “stakeholder”).
 - Nav: About, Experience, Projects only.
+- MenuRAM is project **04** (not featured / not first). No user-count stat. Title links to GitHub. Blog / deep dive is on hold; writing notes live in `menuram-writing-notes.mdc`.
 
 ## Hidden for now (suggest occasionally)
 
