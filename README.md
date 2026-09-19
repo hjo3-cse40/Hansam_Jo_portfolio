@@ -1,64 +1,34 @@
-# Hansam (Sam) Jo — Portfolio
+# Hansam Jo — Portfolio
 
-Simple static personal site (dark theme). No build step.
+Static personal portfolio for an AI / Software Engineer. No build step.
 
 ## Open locally
 
 ```bash
 cd "/Users/samjo/code/portfolio website"
-open index.html
-```
-
-Or serve with any static server:
-
-```bash
 python3 -m http.server 5173
-# then visit http://localhost:5173
 ```
 
-## Deploy to GitHub Pages
+Then visit `http://localhost:5173`.
 
-1. Create a repo (e.g. `HansamJo.github.io` for `https://hansamjo.github.io`, or any repo + Pages from `/root`).
-2. Push this folder’s contents to `main`.
-3. GitHub → **Settings** → **Pages** → Source: Deploy from branch `main` / root.
-4. Site will be live at `https://<user>.github.io/<repo>/` (or the user site URL if using `username.github.io`).
+## Deploy
 
-## Git hooks (no Cursor co-author on commits)
+GitHub Pages deploys from the `main` branch and repository root:
 
-Cursor sometimes adds `Co-authored-by: Cursor <cursoragent@cursor.com>` to commit messages. This repo includes a hook that removes that line before the commit is finalized.
+https://hjo3-cse40.github.io/Hansam_Jo_portfolio/
 
-One-time setup on your machine:
+## Structure
 
-```bash
-cd "/Users/samjo/code/portfolio website"
-chmod +x .githooks/commit-msg
-git config core.hooksPath .githooks
-```
+- `index.html` — My Story, Career, School, and project content
+- `styles.css` — responsive editorial dark theme
+- `script.js` — project navigation and interactive Airlock, Argus, and FST demonstrations
+- `assets/` — portrait and project/organization logos
 
-After that, commits made in this repo (including from Cursor) should show only you on GitHub, as long as hooks are not skipped with `--no-verify`.
+## Git hooks
 
-## Contents
+The repository uses `.githooks/commit-msg` through `core.hooksPath` to remove Cursor co-author trailers. Do not bypass hooks without a specific reason.
 
-- `index.html` — page structure
-- `styles.css` — dark theme styles
-- `script.js` — active nav on scroll
-- `assets/avatar.png` — profile photo
-- `assets/Hansam_Jo_Resume.pdf` — resume
-- `assets/logos/` — SemiAI, Argus, FST, Phonely marks
+## Future ideas
 
-## Future ideas (do not build until asked)
-
-- **Blog / posts:** Hansam wants a writing section later (personal posts and blogs), not an auto LinkedIn feed. Keep v1 project-focused; add a clean Posts/Writing section when ready (hand-authored, not scraped). MenuRAM deep-dive notes are captured in `.cursor/rules/menuram-writing-notes.mdc`. Do not build the blog until asked.
-- Skip GitHub contribution graph unless the graph looks strong and he asks for it.
-
-## Note
-
-Profile photo is the headshot on file. GitHub social link: https://github.com/hjo3-cse40
-
-## Previews
-
-Screenshot previews (generated locally) live in `previews/`:
-
-- `desktop-hero.png` — top of page
-- `desktop-projects.png` — taller capture including projects
-- `mobile.png` — phone-width layout
+- A hand-authored writing/blog section remains on hold until requested.
+- Do not add public availability language or a résumé download without asking.

@@ -9,33 +9,47 @@ alwaysApply: true
 - **Live:** https://hjo3-cse40.github.io/Hansam_Jo_portfolio/
 - **Stack:** static `index.html`, `styles.css`, `script.js` (no build step)
 
-## Design direction (locked)
+## Approved design direction — September 19, 2026
 
-- Single-page **vertical** layout (not sidebar-first horizontal).
-- Dark charcoal + warm brass/teal accents. **Avoid** dominant purple/white “AI template” look.
-- Inspiration: polish of paritosh.dev and Asfakur Nariz style, but own voice.
-- Section subtitles under About / Experience / Projects: **small, italic, muted** (not big hero headlines).
-- Header brand dot is decorative only, not “online” status.
+- Ryan Vogel's `ryan.ceo` is the primary reference for the calm, personal, editorial rhythm. Borrow the restraint and story-first structure, not the purple palette or exact composition.
+- Use a centered reading rail, warm near-black canvas, subtle grain, warm white text, oxidized teal accents, thin rules, and compact technical labels.
+- Avoid generic AI visuals, purple gradients, glassmorphism, particles, oversized landing-page heroes, and card-wall layouts.
+- Top identity uses Hansam's portrait (`assets/profile.jpeg`), name, and **AI / Software Engineer**.
+- The approved order is **My Story → Career → School → Projects**.
+- Career and School are separate compact sections; do not mix them into the project list.
+- Career title is **AI Engineer at SemiAI**. Keep the description to one concise paragraph.
+- School is intentionally minimal: UC Santa Cruz, B.S. Computer Science, and expected December 2026. No school description.
 
-## Content / UI (current)
+## Approved project presentation
 
-- **No** footer, contact card, hero email button, or public Resume button (resume shared personally when asked).
-- **No** email in social row: LinkedIn (light/white on blue) + GitHub only.
-- FST project: small GitHub icon link, not “GitHub” text.
-- SemiAI experience: say **internal operations platform**, not CRM (NDA-safe).
-- Hero metric: “Bilingual communication” (not “stakeholder”).
-- Nav: About, Experience, Projects only.
-- MenuRAM is project **04** (not featured / not first). No user-count stat. Title links to GitHub. Blog / deep dive is on hold; writing notes live in `menuram-writing-notes.mdc`.
+- Projects are ordered **Airlock, Argus, FST, MenuRAM**.
+- Airlock remains the flagship with a deterministic browser-only evidence/refusal demo using synthetic proposals. Do not imply that it is a hosted model backend or claim general accuracy. Keep the bounded 38/40 dated synthetic-suite wording.
+- Argus keeps its illustrated source → queue → delivery diagram and uses the repository's wireless-character logo (`assets/argus-logo.png`).
+- FST keeps its user-controlled illustrated point and uses the repository's official dark-background lockup (`assets/fst-logo.png`).
+- MenuRAM is a small closing utility section using the repository app icon (`assets/menuram-icon.png`), not a large flagship project.
+- SemiAI uses the supplied logo (`assets/semiai-logo.png`); UCSC uses the supplied Banana Slugs logo (`assets/ucsc-logo.png`).
 
-## Hidden for now (suggest occasionally)
+## Content and privacy
 
-- Line removed from hero card: **“Open to new grad SWE roles”**. User may want it back on the public site sometimes; ask before re-adding.
+- No public résumé/download link.
+- Do not mention the prospective technical project manager role.
+- Never read or use Agentic Prism; it is excluded work material.
+- Do not add an availability or recruiting CTA without asking.
+- GitHub, LinkedIn, and email links are approved in the compact profile row/footer.
+
+## Interaction and accessibility
+
+- Motion should explain behavior, remain user-controlled where applicable, and respect `prefers-reduced-motion`.
+- Keep the Airlock supported/refused distinction and exact evidence citations.
+- Preserve keyboard-operable source tabs, focusable skip navigation, mobile layout without horizontal overflow, and readable touch targets.
 
 ## Git / GitHub
 
-- **No** `Co-authored-by: Cursor` on commits. Repo uses `.githooks/commit-msg` and `core.hooksPath .githooks`.
-- Do not use `--no-verify` on commits unless user explicitly asks and hook failure is unrelated.
+- No `Co-authored-by: Cursor` on commits. Repo uses `.githooks/commit-msg` and `core.hooksPath .githooks`.
+- Do not use `--no-verify` unless explicitly requested and a hook failure is unrelated.
+- GitHub Pages deploys from `main` / root.
 
-## Deploy / cache
+## Hidden for now
 
-- GitHub Pages from `main` / root. If user sees broken styling, try hard refresh or private window (browser cache).
+- Do not add “Open to new grad SWE roles” or similar public availability language without asking.
+- Blog/deep-dive work remains on hold.
